@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_toggle_bounds"
+        android:title="@string/action_toggle_bounds"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_refresh_drivers"
+        android:title="Refresh Driver Locations"
+        android:orderInCategory="99"
+        app:showAsAction="never" />
+</menu>

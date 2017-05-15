@@ -1,0 +1,20 @@
+{
+  "Available Drivers" : {
+    "Jim" : {
+      "latitude" : 32.072493,
+      "longitude" : -81.094278,
+      "phoneNumber" : 9876543510
+    },
+    "Steve" : {
+      "latitude" : 32.078493,
+      "longitude" : -81.094278,
+      "phoneNumber" : 1234567890
+    }
+  },
+  "Drivers" : {
+    "Ryan" : {
+      "password" : "m",
+      "phoneNumber" : 7777777777
+    }
+  }
+}

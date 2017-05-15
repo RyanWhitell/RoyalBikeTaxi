@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ryanwhitell.royalbiketaxi">
+
+    <!--
+        TODO
+        Check that the app can use the google api, location, maps, and is connected to the internet.
+        Handle more user permissions as in:
+            https://developers.google.com/maps/documentation/android-api/location#request_runtime_permissions
+    -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".main.activities.UserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.activities.DriverActivity"
+            android:label="@string/title_activity_driver"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.activities.BookTourActivity"
+            android:label="@string/title_activity_book_tour"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".main.activities.TourInformationActivity" />
+        <activity android:name=".main.activities.HelpAndRatesActivity" />
+
+        <service android:name=".main.services.DriverService" />
+
+    </application>
+
+</manifest>
